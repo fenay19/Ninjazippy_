@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NinjaZipPy"
+version = "0.1.0"
+description = "Simple CLI wrapper to create/extract .7z archives"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["py7zr>=0.18"]
+
+[project.scripts]
+ninjazippy = "ninjazippy.cli:main"
